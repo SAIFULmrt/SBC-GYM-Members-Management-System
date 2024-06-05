@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditSelectedIndexController">
+   <children>
+      <FlowPane>
+         <children>
+            <AnchorPane prefHeight="685.0" prefWidth="893.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+               <children>
+                  <VBox layoutX="4.0" layoutY="12.0" prefHeight="661.0" prefWidth="885.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="78.0" prefWidth="869.0" text="Add New Members Info">
+                           <font>
+                              <Font name="System Bold" size="31.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="42.0" prefWidth="869.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Membership Id" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="membershipIdTextField" prefHeight="56.0" prefWidth="289.0" />
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Joining Date" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="joiningDateField" prefHeight="38.0" prefWidth="289.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="869.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="First Name" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="firstNameTextField" prefHeight="56.0" prefWidth="289.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Last Name" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="lastNameTextField" prefHeight="56.0" prefWidth="289.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="113.0" prefWidth="869.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="NID No." textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="28.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="nidNumberTextField" prefHeight="44.0" prefWidth="289.0">
+                                 <HBox.margin>
+                                    <Insets top="35.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Profile Photo" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="35.0" top="32.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button fx:id="choosePhotoButton" mnemonicParsing="false" onAction="#handleChoosePhotoButton" prefHeight="39.0" prefWidth="100.0" text="Choose Photo">
+                                 <HBox.margin>
+                                    <Insets top="40.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <ImageView fx:id="choosenPhotoView" fitHeight="119.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="28.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="869.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Address" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="addressTextField" prefHeight="56.0" prefWidth="289.0" />
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Lifestyle" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="lifestyleTextField" prefHeight="56.0" prefWidth="289.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="869.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Gender" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <CheckBox fx:id="genderMaleCheckBox" mnemonicParsing="false" onAction="#handleGenderMaleCheckBox" prefHeight="37.0" prefWidth="148.0" text="Male" textFill="WHITE" />
+                              <CheckBox fx:id="genderFemaleCheckBox" mnemonicParsing="false" onAction="#handleGenderFemaleCheckBox" prefHeight="37.0" prefWidth="148.0" text="Female" textFill="WHITE" />
+                              <Label prefHeight="37.0" prefWidth="116.0" text="Date of Birth" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="28.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="dateOfBirthField" prefHeight="37.0" prefWidth="289.0">
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin></DatePicker>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="869.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Height (cm)" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="heightTextField" prefHeight="56.0" prefWidth="289.0" />
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Weight (kg)" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="weightTextField" prefHeight="56.0" prefWidth="289.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="869.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Phone Number" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="phoneNumberTextField" prefHeight="56.0" prefWidth="289.0" />
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Email" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="emailTextField" prefHeight="56.0" prefWidth="289.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="869.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Membership Package" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ChoiceBox fx:id="chooseMembershipPackageChoiceBox" prefHeight="39.0" prefWidth="288.0" />
+                              <Label prefHeight="56.0" prefWidth="123.0" text="Class Schedule" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ChoiceBox fx:id="chooseClassScheduleChoiceBok" prefHeight="37.0" prefWidth="290.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="113.0" prefWidth="869.0">
+                           <children>
+                              <Button fx:id="saveButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleSaveButtonClick" prefHeight="48.0" prefWidth="126.0" text="Save">
+                                 <HBox.margin>
+                                    <Insets left="120.0" top="30.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="clearButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleClearButtonClick" prefHeight="48.0" prefWidth="126.0" text="Clear">
+                                 <HBox.margin>
+                                    <Insets left="120.0" top="30.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="backButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleBackButtonClick" prefHeight="48.0" prefWidth="126.0" text="Back">
+                                 <HBox.margin>
+                                    <Insets left="120.0" top="30.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </FlowPane>
+   </children>
+</FlowPane>

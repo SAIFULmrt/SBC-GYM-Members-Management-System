@@ -1,0 +1,18 @@
+# fixing 1st error
+
+JavFxProjectName -> Build Path -> Add Libraries -> User Library -> Check JavaFX -> Finish
+
+
+
+# fixing 2nd error
+
+JavaFXProjectName -> Main File -> Run Configuration -> Arguments -> VM Aguments ->
+
+--module-path "C:\Program Files\Java\javafx-sdk-11.0.2\lib" --add-modules javafx.controls,javafx.fxml
+
+-> apply -> run
+
+
+
+
+video link: https://youtu.be/oVn6_2KuYbM?si=hqYAF6jXuqxOs0d4

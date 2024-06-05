@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DatabaseDetailsViewController">
+   <children>
+      <AnchorPane prefHeight="734.0" prefWidth="878.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+         <children>
+            <ImageView fx:id="photoView" fitHeight="264.0" fitWidth="331.0" layoutX="496.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox layoutX="180.0" layoutY="33.0" prefHeight="669.0" prefWidth="253.0">
+               <children>
+                  <Label fx:id="membershipIdLabel" prefHeight="61.0" prefWidth="405.0" text="Membership ID" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="fullNameLabel" prefHeight="61.0" prefWidth="405.0" text="Full Name" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="nidNumberLabel" prefHeight="61.0" prefWidth="405.0" text="NID Number" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="addressLabel" prefHeight="61.0" prefWidth="405.0" text="Address" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="lifestyleLabel" prefHeight="61.0" prefWidth="405.0" text="Lifestyle" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="genderLabel" prefHeight="61.0" prefWidth="405.0" text="Gender" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="dateOfBirthLabel" prefHeight="61.0" prefWidth="405.0" text="Date of Birth" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="heightLabel" prefHeight="61.0" prefWidth="405.0" text="Height" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="weightLabel" prefHeight="61.0" prefWidth="405.0" text="Weight" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="phoneNumberLabel" prefHeight="61.0" prefWidth="405.0" text="Phone Number" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="emailLabel" prefHeight="61.0" prefWidth="405.0" text="Email" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox layoutX="639.0" layoutY="455.0" prefHeight="183.0" prefWidth="239.0">
+               <children>
+                  <Label fx:id="joiningDateLabel" prefHeight="61.0" prefWidth="405.0" text="Joining Date">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="membershipPackageLabel" prefHeight="64.0" prefWidth="239.0" text="Membership Package">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="classScheduleLabel" prefHeight="61.0" prefWidth="405.0" text="Class Schedule">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox layoutX="14.0" layoutY="33.0" prefHeight="669.0" prefWidth="164.0">
+               <children>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Membership ID:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Full Name:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="NID Number:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Address:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Lifestyle:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Gender:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Date of Birth:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Height:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Weight:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Phone Number:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Email:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button fx:id="backButton" alignment="CENTER" layoutX="472.0" layoutY="657.0" mnemonicParsing="false" onAction="#handleBackButtonClick" prefHeight="45.0" prefWidth="111.0" text="Back" />
+            <Button fx:id="homeButton" alignment="CENTER" layoutX="647.0" layoutY="657.0" mnemonicParsing="false" onAction="#handleHomeButtonClick" prefHeight="45.0" prefWidth="111.0" text="Home" />
+            <Label alignment="CENTER" layoutX="408.0" layoutY="394.0" prefHeight="61.0" prefWidth="405.0" text="GYM Membership Status" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <VBox layoutX="408.0" layoutY="455.0" prefHeight="183.0" prefWidth="239.0">
+               <children>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Joining Date:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="64.0" prefWidth="239.0" text="Membership Package:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="405.0" text="Class Schedule:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</FlowPane>
